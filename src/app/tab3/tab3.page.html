@@ -1,17 +1,94 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Ionic Components
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-text color="secondary">
+    <h2>Badge</h2>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="start">11</ion-badge>
+      <ion-label>Badge in start slot</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-badge slot="end">22</ion-badge>
+      <ion-label>Badge in end slot</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-text color="secondary">
+    <h2>Breadcrumbs</h2>
+  </ion-text>
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">Electronics</ion-breadcrumb>
+    <ion-breadcrumb href="#cameras">Cameras</ion-breadcrumb>
+    <ion-breadcrumb href="#film">Film</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-text color="secondary">
+    <h2>Button</h2>
+  </ion-text>
+  <ion-button>Default</ion-button>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">Success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="light">Light</ion-button>
+  <ion-button color="medium">Medium</ion-button>
+  <ion-button color="dark">Dark</ion-button>
+
+  <ion-text color="secondary">
+    <h2>Checkbox Components</h2>
+  </ion-text>
+  <ion-checkbox>I agree to the <a href="#" (click)="$event.stopPropagation()">terms and conditions</a></ion-checkbox>
+
+  <ion-text color="secondary">
+    <h2>Datetime Components</h2>
+  </ion-text>
+  <ion-datetime></ion-datetime>
+
+  <ion-text color="secondary">
+    <h2>Input Components</h2>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Text input" placeholder="Enter text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Number input" type="number" placeholder="000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Password input" type="password" value="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Email input" type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Telephone input" type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-text color="secondary">
+    <h2>Action Sheet Components</h2>
+  </ion-text>
+  <ion-button id="open-action-sheet">Open</ion-button>
+  <ion-action-sheet
+    trigger="open-action-sheet"
+    header="Actions"
+    [buttons]="actionSheetButtons">
+  </ion-action-sheet>
+
 </ion-content>

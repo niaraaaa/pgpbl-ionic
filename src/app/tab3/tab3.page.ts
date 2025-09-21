@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab3Page {
+  public actionSheetButtons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: { action: 'delete' },
+      handler: () => {
+        console.log('Delete clicked');
+      }
+    },
+    {
+      text: 'Share',
+      data: { action: 'share' },
+      handler: () => {
+        console.log('Share clicked');
+      }
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: { action: 'cancel' },
+    },
+  ];
 
   constructor() {}
 

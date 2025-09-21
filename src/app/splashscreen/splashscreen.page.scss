@@ -1,0 +1,18 @@
+.splash-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(189, 179, 167);
+}
+
+img {
+  margin-bottom: 30px;
+  width: 100px;
+}
+
+small {
+  color:gray;
+  margin-top: 20px;
+}
